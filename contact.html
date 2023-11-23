@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@200&family=Noto+Sans+Mono&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <style>
+        *{
+            background-color: black;
+            font-family: 'Noto Sans Mono', monospace;
+            color: lime;
+        }
+
+        button{
+            text-decoration: none;
+            /* height: 50px;
+            width: 120px; */
+            font-size: medium;
+            border: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Last login: <span id="time"></span></p>
+        <p>[userprofile@MacBook-Air ~ % mysql -u root -p</p>
+        <p>[Enter password: <span id="password"></span></p>
+        <p>Welcome to the BolaProfile monitor.  Commands end with ; or \g.</p>
+        <p>Your BolaProfile connection id is 4</p>
+        <p>Server version: 1.7.38 BolaCorp Community Server - CGLtd</p><br>
+        <p>Copyright (b) 1998, 2022, BolaCorp and/or its affiliates.</p><br>
+        <p>BolaCorp is a registered trademark of BolaCorp Industries and/or its<br>affiliates. Other names may be trademarks of their respective<br>owners.</p><br>
+        <p>Click 'view' to view projects. Click 'return' to return to homepage. Click 'about_me' to view user profile. <br>Click 'LinkedIn' to view LinkedIn profile. Click 'Github' to view user github. Click 'CV' to view user CV.</p>
+
+        <p>[mysql> show tables;</p>
+        <table style="border: lime dashed 2px;">
+            <thead>
+            <tr>
+                <td style="border-bottom: lime dashed 2px;">Tables_in_BolaDB</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>contact_details</td>
+            </tr>
+        </table>
+        <p>3 rows in set (0.01 sec)</p>
+
+        <p>[mysql> select * from contact_details;</p>
+        <table style="width: 650px; border: lime dashed 2px; border-right: lime dashed 2px;">
+            <thead>
+            <tr>
+                <td style="border-bottom: lime dashed 2px; border-right: lime dashed 2px;">name</td>
+                <td style="border-bottom: lime dashed 2px; border-right: lime dashed 2px;">location</td>
+                <td style="border-bottom: lime dashed 2px; border-right: lime dashed 2px;">contact number</td>
+                <td style="border-bottom: lime dashed 2px;">email</td>
+                <td></td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="border-right: lime dashed 2px;">bola</td>
+                <td style="border-right: lime dashed 2px;">london</td>
+                <td style="border-right: lime dashed 2px;">07539670365</td>
+                <td>bolajoko.awosan@gmail.com</td>
+            </tr>
+        </table>
+        <p>1 row in set (0.01 sec)</p>
+          
+        <button class="linkedin"><a href="https://www.linkedin.com/in/bola-a-955416193" style="text-decoration: none;">[mysql> LinkedIn</a></button><br>
+        <button class="github"><a href="https://github.com/ata-rodo" style="text-decoration: none">[mysql> Github</a></button><br>
+        <button class="cv"><a href="https://docs.google.com/document/d/1oCXo45CaA0qcb6U7UulbPktmenmM-8CA/edit?usp=sharing&ouid=113566602993418437432&rtpof=true&sd=true" style="text-decoration: none">[mysql> CV</a></button><br>
+    </div>
+    <button style=" border: none;"><a href="/portfolio/HTML/aboutme.html" style="text-decoration: none; color: lime; font-size: medium;">[mysql> about_me;</a></button><br>
+    <button style=" border: none;"><a href="/portfolio/HTML/projects.html" style="text-decoration: none; color: lime; font-size: medium;">[mysql> view;</a></button><br>
+    <button style=" border: none;"><a href="/portfolio/HTML/homepage.html" style="text-decoration: none; color: lime; font-size: medium;">[mysql> return;</a></button>
+    <script>
+        `use strict`
+       var datetime = new Date();
+       console.log(datetime);
+       document.getElementById("time").textContent = datetime; //it will print on html page
+   </script>
+</body>
+</html>

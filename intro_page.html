@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@200&family=Noto+Sans+Mono&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <title>Warning!</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        width: 100%;
+        border: black 10px;
+        color: lime;
+        font-family: 'Noto Sans Mono', monospace;
+    }
+
+    .container {
+        width: 1380px;
+        margin: 20px;
+        
+    }
+
+    .response {
+        background-color: black;
+        border: black 0px;
+        color: lime;
+        font-size: 20px;
+        font-family: 'Noto Sans Mono', monospace;
+    }
+
+    button {
+        background-color: black;
+        width: 70px;
+        height: 30px;
+        color: lime;
+        border: none;
+        /* border: 3px; */
+        font-size: 20px;
+        font-family: 'Noto Sans Mono', monospace;
+
+    }
+
+    button a {
+        text-decoration: none;
+        color: lime;
+        transition-delay: 4s;
+    }
+    
+    .three {
+        opacity: 0;
+        transition: opacity;
+    }
+
+    .first {
+        opacity: 1;
+    }
+
+    .two {
+        opacity: 0;
+        transition: opacity;
+        transition-delay: 1s;
+    }
+
+    .second {
+        opacity: 1;
+
+    }
+    
+    .one {
+        opacity: 0;
+        transition: opacity;
+        transition-delay: 2s;
+    }
+
+    .third {
+        opacity: 1;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <p>
+            > You are about to enter an unknown domain registerd to user "Bola". This puts you at risk of:
+            > having your mind blown
+        </p>
+        
+        <label for="response">> If you are ready to enter this domain click "Enter"</label><br><br>
+        <button type="button" onclick="clickBtn()" id="btn" ><a href="javascript:setTimeout(()=>{window.location = '/portfolio/HTML/homepage.html' },3000);">Enter</a></button>
+
+
+        <p class="three" id="three">
+            <span id="three">> ...3</span>
+        </p>
+        <p class="two" id="two">
+            <span>> ...2</span>
+        </p>
+        <p class="one" id="one">
+            <span>> ...1</span>
+        </p>
+    </div>
+   
+    <script>
+        var three = document.getElementById("three")
+        var two = document.getElementById("two")
+        var one = document.getElementById("one")
+
+        function clickBtn(){
+        three.classList.toggle("first");
+        two.classList.toggle("second");
+        one.classList.toggle("third");
+        }
+
+        // function delay (URL) {
+        // setTimeout( function() { document.location = /portfolio/HTML/homepage.html }, 500 );
+        // }
+
+    </script>
+</body>
+</html>

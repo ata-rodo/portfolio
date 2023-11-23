@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <style>
+        * {
+            background: black;
+            color: lime;
+            font-family: 'Noto Sans Mono', monospace;
+        }
+
+        .hero {
+            min-height: 100vh;
+            width: 100%;
+            color: lime;
+            position: relative;
+        }
+        
+        /* button {
+            text-decoration: none; 
+            width: 200px;
+            height: 40px;
+            font-size: medium;
+            border: none;
+            align-content: flex-start;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <p>Last login: <span id="time"></span></p>
+        <p>[userprofile@MacBook-Air ~ % mysql -u root -p</p>
+        <p>[Enter password: <span id="password"></span></p>
+        <p>Welcome to the BolaProfile monitor.  Commands end with ; or \g.</p>
+        <p>Your BolaProfile connection id is 4</p>
+        <p>Server version: 1.7.38 BolaCorp Community Server - CGLtd</p><br>
+        <p>Copyright (b) 1998, 2022, BolaCorp and/or its affiliates.</p><br>
+        <p>BolaCorp is a registered trademark of BolaCorp Industries and/or its<br>affiliates. Other names may be trademarks of their respective<br>owners.</p><br>
+        <p>Click 'view' to view projects. Click 'return' to return to homepage</p>
+
+        <p>[mysql> show tables;</p>
+        <table style="border: lime dashed 2px;">
+            <thead>
+            <tr>
+                <td style="border-bottom: lime dashed 2px;">Tables_in_BolaDB</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>user_profile</td>
+            </tr>
+            <tr>
+                <td>programming_languages</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td>projects</td>
+            </tr>
+            </tfoot>
+        </table>
+        <p>3 rows in set (0.01 sec)</p>
+            
+        <p>[mysql> select * from user_profile;</p>
+        <table style="width: 650px; border: lime dashed 2px; border-right: lime dashed 2px;">
+            <thead>
+            <tr>
+                <td style="border-bottom: lime dashed 2px; border-right: lime dashed 2px;">name</td>
+                <td style="border-bottom: lime dashed 2px; border-right: lime dashed 2px;">location</td>
+                <td style="border-bottom: lime dashed 2px; border-right: lime dashed 2px;">sex</td>
+                <td style="border-bottom: lime dashed 2px; border-right: lime dashed 2px;">contact number</td>
+                <td style="border-bottom: lime dashed 2px;">email</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="border-right: lime dashed 2px;">bola</td>
+                <td style="border-right: lime dashed 2px;">london</td>
+                <td style="border-right: lime dashed 2px;">F</td>
+                <td style="border-right: lime dashed 2px;">07539670365</td>
+                <td>bolajoko.awosan@gmail.com</td>
+            </tr>
+        </table>
+        <p>1 row in set (0.01 sec)</p>
+            
+        <p>[mysql> select * from programming_languages;</p>
+
+        <table style="width: 350px; border: lime dashed 2px;">
+            <thead>
+            <tr style="border-bottom: 2px dashed lime;">
+                <td style="border-bottom: 2px dashed lime;">Frontend</td>
+                <td style="border-bottom: 2px dashed lime;">Backend</td>
+                <td style="border-bottom: 2px dashed lime;">Database</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="border-right: lime dashed 2px;">HTML</td>
+                <td style="border-right: lime dashed 2px;">Python</td>
+                <td>MySQL</td>
+            </tr>
+            <tr>
+                <td style="border-right: lime dashed 2px;">CSS</td>
+                <td style="border-right: lime dashed 2px;"></td>
+                <td>Python</td>
+            </tr>
+            <tr>
+                <td style="border-right: lime dashed 2px;">JS</td>
+                <td style="border-right: lime dashed 2px;"></td>
+                <td>MongoDB</td>
+            </tr>
+            <tr>
+                <td style="border-right: lime dashed 2px;">Bootstrap</td>
+                <td style="border-right: lime dashed 2px;"></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td style="border-right: lime dashed 2px;">Materialize</td>
+                <td style="border-right: lime dashed 2px;"></td>
+                
+            </tr>
+            </tfoot>
+        </table>
+        <p>1 row in set (0.04 sec)</p>
+
+        <button style=" border: none;"><a href="/portfolio/HTML/projects.html" style="text-decoration: none; color: lime; font-size: medium;">[mysql> view;</a></button><br>
+        <button style=" border: none;"><a href="/portfolio/HTML/homepage.html" style="text-decoration: none; color: lime; font-size: medium;">[mysql> return;</a></button>
+        
+
+    </div>
+</body>
+
+<script>
+     `use strict`
+    var datetime = new Date();
+    console.log(datetime);
+    document.getElementById("time").textContent = datetime; //it will print on html page
+</script>
+</html>
